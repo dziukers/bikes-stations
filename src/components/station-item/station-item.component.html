@@ -1,0 +1,24 @@
+<div class="location-info">
+    <div class="station-name">
+      {{station.id}} {{station.properties.label}}
+    </div>
+    <div class="user-info paragraph">
+      500m · Piątkowska, Poznań
+    </div>
+  </div>
+  <div class="station-info">
+    <div class="bikes">
+      <img src="assets/icons/bicycle.svg" alt="">
+      <span class="paragraph">Available bikes</span>
+      <span class="bikes-amount">
+        {{ station.properties.bikes }}
+      </span>
+    </div>
+    <div class="places">
+      <img src="assets/icons/unlock.svg" alt="">
+      <span class="paragraph">Available places</span>
+      <span class="places-amount">
+        {{ station.properties.bike_racks }}
+      </span>
+    </div>
+  </div>

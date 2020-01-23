@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'SFPro-medium';
+    src: url('assets/fonts/SF-Pro-Display-Medium.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'SFPro-bold';
+    src: url('assets/fonts/SF-Pro-Display-Bold.otf') format("opentype");
+    font-weight: bold;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Helvetica-bold';
+    src: url('assets/fonts/Helvetica-Bold-Font.ttf') format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+ 
+
+body, html {
+    margin:0;
+    padding:0;
+}
+.paragraph {
+  font-family: 'SFPro-medium'; 
+  color:#676767;
+  font-size: 12px;
+}

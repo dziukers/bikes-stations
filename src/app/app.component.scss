@@ -1,0 +1,74 @@
+.map-wrapper {
+    position: relative;
+    top:0;
+    left:0;
+    .map {
+        z-index: 0;
+    }
+    .stations-button {
+        position: absolute;
+        top:10px;
+        right:10px;
+        z-index: 4;
+        background:white;
+        border: 1px solid rgba(50,50,50,0.6);
+        padding:10px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 15px;
+        outline: none;
+    }
+    .stations-list {
+        position: absolute;
+        top:10%;
+        left:10px;
+        width: 400px;
+        height: 60%;
+        background: white;
+        border-radius: 10px;
+        padding:10px;
+        box-sizing: border-box;
+        z-index: 3;
+        @media screen and (max-width: 768px) {
+            width:100vw;
+            height: 100vh;
+            top:0;
+            left:0;
+            padding-top: 50px;
+        }
+        ul {
+            height: 100%;
+            list-style: none;
+            padding:0;
+            margin:0;
+            overflow-y: auto;
+            overflow-x: hidden;
+            li {
+                height: 180px;
+                border: 1px solid #979797;
+                border-radius: 10px;
+                padding:15px 20px 0 20px;
+                margin: 10px;
+            }
+        }
+    }
+    .active-station-container {
+        display: none;
+    }
+    @media screen and (max-width: 768px) {
+        .active-station-container {
+            position: absolute;
+            bottom:0;
+            left:0;
+            height: 25vh;
+            width: 100%;
+            background:white;
+            padding:20px;
+            box-sizing: border-box;
+            z-index: 2;
+            display: block;
+         }
+    }
+
+}
+
